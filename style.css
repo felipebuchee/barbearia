@@ -1,0 +1,144 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 500px){
+    body{
+        display: flex;
+        background-color: blue;
+    }
+
+    .splash{
+        font-size: 12px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        z-index: 200;
+        color: white;
+        text-align: center;
+        padding-top: 300px;
+    }
+
+    .splash i{
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    .splash.display-none{
+        font-size: 12px;
+        position: fixed;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        z-index: -10;
+        color: white;
+        text-align: center;
+        line-height: 90vh;
+    }
+
+    .splash h1{
+        font-weight: 100;
+        font-size: 45px;
+    }
+
+    @keyframes fadeIn{
+        to{
+            opacity: 1;
+        }
+    }
+    
+    .fade-in{
+        opacity: 0;
+        animation: fadeIn 1s ease-in forwards;
+    }
+
+
+    nav.menu-lat {
+        width: 50px;
+        height: 100%;
+        background-color: #009535;
+        box-shadow: 3px 0 0 #009535;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        transition: 0.7s;
+        z-index: 99;
+    }
+    
+    nav.menu-lat ul {
+        padding: 0;
+    }
+    
+    nav.menu-lat.expandir {
+        width: 150px;
+        transition: 1s;
+    }
+    
+    .btn-expnd {
+        width: 100%;
+    }
+    
+    .btn-expnd>i {
+        color: #E7F0DC;
+        font-size: 36px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    
+    ul {
+        height: 100%;
+        list-style-type: none;
+    }
+    
+    ul li.item-menu {
+        transition: 0.5s;
+    }
+    
+    ul li.ativo {
+        background-color: #009535;
+    }
+    
+    ul li.item-menu:hover {
+        background: #027d2d;
+    }
+    
+    ul li.item-menu a {
+        color: #E7F0DC;
+        text-decoration: none;
+        font-size: 12px;
+        display: flex;
+        line-height: 40px;
+    
+    }
+    
+    ul li.item-menu a .txt-link {
+        margin-left: 80px;
+        transition: 1s;
+        opacity: 0;
+    }
+    
+    nav.menu-lat.expandir .txt-link {
+        margin-left: 40px;
+        transition: 1s;
+        opacity: 100%;
+    }
+    
+    ul li.item-menu a .icon>i {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+}
