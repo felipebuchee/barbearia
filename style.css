@@ -374,6 +374,17 @@ nav {
         margin-top: 15px
     }
 
+    .titulo button{
+        margin-top: 10px;
+        padding: 10px 20px;
+        width: 40vw;
+        border-radius: 10px;
+        background-color: #FFD369;
+        color: #1b2027;
+        border: none;
+        cursor: pointer;
+    }
+
     .card{
         margin: 30px;
         color: white;
@@ -415,5 +426,27 @@ nav {
 
     .card button:hover{
         background-color: #ffbf2b;
+    }
+
+    .form-group {
+        margin: 20px;
+        color: #FFD369;
+    }
+    
+    label {
+        display: block;
+        font-weight: bold;
+    }
+    
+    input[type="date"],
+    input[type="time"] {
+        width: 80%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    input[type="checkbox"] + label {
+        display: inline-block;
     }
 }
