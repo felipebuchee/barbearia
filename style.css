@@ -429,6 +429,17 @@ nav {
         background-color: #ffbf2b;
     }
 
+    .cardAgenda{
+        margin: 30px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0f1115;
+        height: 10vh;
+        border-radius: 12px;
+    }
+
     .form-group {
         margin: 20px;
         color: #FFD369;
